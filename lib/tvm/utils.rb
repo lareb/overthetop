@@ -1,7 +1,10 @@
 # This module contains a collection of generally useful methods that (currently) have no better place to live. They can 
 # either be referenced directly as module methods or be mixed in. 
-module Mws::Utils
-  extend self
+module Tvm::Utils
+
+  def is_valid_email?(email)
+    (Tvm::VALID_EMAIL_REGEX =~ email) == 0 ? true : false
+  end
 
   # This method will derive a camelized name from the provided underscored name.
   # 
