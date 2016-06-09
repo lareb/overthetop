@@ -43,10 +43,7 @@ module Tvm
 
 end
 
-
 # connection = Tvm.connect()
-
-
 # category = Tvm::Category.get(connection, params)
 # menus  = Tvm::Menu.get(connection, id)
 # user = Tv::User.login(params)
